@@ -1,0 +1,146 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirebaseDatabase.net" Version="4.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="3.4.0.1008975" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="home.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="homeadmin.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="listado.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="mapa.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Singin.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\AltaMunicipio.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\AltaRiesgo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\Altausuario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\ConsultaMunicipio.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\ConsultaRiesgo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\ConsultaUsuario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\Consultor_Detail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\Consultor_Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\Consultor_Master.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\Consultor_Municipios.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\Consultor_ZonasRiesgo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\ModifcarMunicipios.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\verMunicipio.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="detail_home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="homeadmin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Home_admin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="listado.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="mapa.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="master_home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Singin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\AltaMunicipio.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\AltaRiesgo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\Altausuario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\ConsultaMunicipio.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\ConsultaRiesgo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\ConsultaUsuario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\Consultor_Detail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\Consultor_Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\Consultor_Master.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\Consultor_Municipios.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\Consultor_ZonasRiesgo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\ModifcarMunicipios.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Vistas\verMunicipio.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>

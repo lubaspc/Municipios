@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Municipios.Vistas.ConsultaUsuario">
+    <StackLayout>
+        <ListView
+            x:Name="UsersList"
+            ItemSelected="OnItemSelected"
+            RowHeight="80">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="50">
+                        <StackLayout Margin="10" Padding="0">
+                            <Label Text="{Binding nombre}" FontSize="30" />
+                            <Label Text="{Binding correo}" FontSize="20" />
+                        </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

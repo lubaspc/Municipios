@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Municipios"
+             x:Class="Municipios.Vistas.ConsultaMunicipio"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"  
+             >
+  <StackLayout>
+    <ListView
+        x:Name="vehicleslist"
+        ItemSelected="Vehicleslist_OnItemSelected"
+        RowHeight="80">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell Height="50">
+                    <StackLayout Margin="10" Padding="0">
+                        <Label Text="{Binding Nombre}" FontSize="30" />
+                        <Label Text="{Binding Significado}" FontSize="20" />
+                    </StackLayout>
+
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

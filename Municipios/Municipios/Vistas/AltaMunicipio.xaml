@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Municipios.Vistas.AltaMunicipio">
+    <ContentPage.Content>
+
+        <ScrollView>
+        <StackLayout Padding="30,50">
+            <Label Text="IGCEM" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta IGECEM" Keyboard="Numeric" x:Name="AIGECEM"/>
+            <Label Text="Nombre" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Nombre" x:Name="ANombre"/>
+            <Label Text="Significado" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Significa" x:Name="ASignificado"/>
+            <Label Text="Altitud" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Altitud" Keyboard="Numeric" x:Name="AAltitud"/>
+            <Label Text="Cabecera" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Cabecera" x:Name="ACabecera"/>
+            <Label Text="Clima" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Clima" x:Name="AClima"/>
+            <Label Text="Latitud" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Latitud" Keyboard="Numeric" x:Name="ALatitud"/>
+            <Label Text="Longitud" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Longitud" Keyboard="Numeric"  x:Name="ALongitud"/>
+            <Label Text="Superficie" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Superficie" Keyboard="Numeric"  x:Name="ASuperficie"/>
+            <Label Text="Elevacion" HorizontalOptions="CenterAndExpand" />
+                <Switch x:Name="AElevacion" HorizontalOptions="Center"/>
+            <Label Text="Elevacion Altitud"   HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Elevacion Altitud" Keyboard="Numeric" x:Name="AEleAltitud"/>
+            <Label Text="Rio" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Rio" x:Name="ARio"/>
+            <Label Text="RioLongitud" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Longitud del Rio" Keyboard="Numeric"  x:Name="ALongRio"/>
+            <Label Text="Cuerpo" HorizontalOptions="CenterAndExpand" />
+                <Switch x:Name="ACuerpo" HorizontalOptions="Center"/>
+            <Label Text="Cuerpo Capacidad" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Cuerpo Capacidad" x:Name="ACuerpoCapacidad"/>
+            <Label Text="Es de Poblacion Max" HorizontalOptions="CenterAndExpand" />
+                <Switch IsToggled="False" x:Name="APoblacionMax" HorizontalOptions="Center"/>
+            <Label Text="Poblacion" HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="Inserta Poblacion" x:Name="APoblacion"/>
+            <Label Text="Mas Extensos" HorizontalOptions="CenterAndExpand" />
+                <Switch IsToggled="False" x:Name="AMaxExtensos" HorizontalOptions="Center"/>
+            <Label Text="Menos Extensos" HorizontalOptions="CenterAndExpand" />
+                <Switch IsToggled="False" x:Name="AMinExtensos" HorizontalOptions="Center"/>
+            <Label Text="Mas Industriales" HorizontalOptions="CenterAndExpand" />
+                <Switch IsToggled="False" x:Name="AIndus" HorizontalOptions="Center"/>
+            <Button x:Name="GuardarMun" Text="Guardar Municipio" Clicked="GuardarMun_OnClicked"></Button>
+
+
+</StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

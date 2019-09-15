@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Municipios.Vistas.Consultor_Detail">
+    
+    <StackLayout Orientation="Vertical" Padding="50,150">
+        <Label Text="Zonas de Riesgo en Edo. Mex" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
+        <Label Text="Sistema de consulta." FontSize="Large" HorizontalOptions="Center"/>
+        <Image Source="iconoapp.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" />
+        <Label Text="Elije una opcion para consultar" FontSize="Large" HorizontalOptions="Center" />
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button x:Name="btnMunicipios" Text="Municipios" Clicked="BtnMunicipios_Clicked" />
+            <Button x:Name="btnZonasRiesgo" Text="Zonas de Riesgo" Clicked="BtnZonasRiesgo_Clicked" />
+        </StackLayout>
+    </StackLayout>
+    
+</ContentPage>
